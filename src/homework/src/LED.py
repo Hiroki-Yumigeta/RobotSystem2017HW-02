@@ -4,22 +4,19 @@
 import rospy
 from std_msgs.msg import Int32MultiArray
 import wiringpi as w
-OUTPUT = 1
-HIGH = 1
-LOW  = 0
 
 anode   = [21,20,16,12,25,24,23,18]
 cathode = [26,19,13, 6, 5,22,27,17]
 
 def initGPIO():
     for i in xrange(len(anode)):
-        w.pinMode(anode[i], OUTPUT)
+        w.pinMode(anode[i], w.OUTPUT)
     for i in xrange(len(cathode)):
-        w.pinMode(cathode[i], OUTPUT)
+        w.pinMode(cathode[i], w.OUTPUT)
 def ResetPin():
     for i in xrange(len(anode)):
-        w.digitalWrite(anode[i],   LOW)
-        w.digitalWrite(cathode[i], HIGH)
+        w.digitalWrite(anode[i],   w.LOW)
+        w.digitalWrite(cathode[i], w.HIGH)
 
 def WriteLED(row, vector):
     w.digitalWrite(anode[row], HIGH)
