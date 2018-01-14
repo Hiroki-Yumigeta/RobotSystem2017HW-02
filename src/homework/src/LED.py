@@ -19,9 +19,9 @@ def ResetPin():
         w.digitalWrite(cathode[i], w.HIGH)
 
 def WriteLED(row, vector):
-    w.digitalWrite(anode[row], HIGH)
+    w.digitalWrite(anode[row], w.HIGH)
     for i in xrange(len(vector)):
-        w.digitalWrite(cathode[i], vector[i])
+        w.digitalWrite(cathode[i], w.LOW if vector[i]==0 else w.HIGH)
 
 def cb(message):
     # 中身
@@ -39,7 +39,7 @@ def cb(message):
 
 if __name__ == '__main__':
     rospy.init_node('LED')
-    rate = rospy.Rate(100000)
+    rate = rospy.Rate(10000)
     w.wiringPiSetupGpio()
     initGPIO()
     ResetPin()

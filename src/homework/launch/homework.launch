@@ -1,9 +1,4 @@
 <launch>
- <!-- include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch">
-  <arg name="port" value="9000"/ -->
- <!-- /include -->
-
  <node pkg="homework" name="Blink" type="Blink.py" required="true" />
  <node pkg="homework" name="LED" type="LED.py" required="true" />
-
 </launch>
