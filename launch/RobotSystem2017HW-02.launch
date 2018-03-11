@@ -1,0 +1,4 @@
+<launch>
+ <node pkg="RobotSystem2017HW-02" name="Blink" type="Blink.py" required="true" />
+ <node pkg="RobotSystem2017HW-02" name="LED" type="LED.py" required="true" />
+</launch>

@@ -1,4 +1,0 @@
-<launch>
- <node pkg="homework" name="Blink" type="Blink.py" required="true" />
- <node pkg="homework" name="LED" type="LED.py" required="true" />
-</launch>

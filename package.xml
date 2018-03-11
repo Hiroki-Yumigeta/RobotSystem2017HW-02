@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>homework</name>
-  <version>0.0.0</version>
-  <description>The homework package</description>
+  <name>RobotSystem2017HW-02</name>
+  <version>0.0.1</version>
+  <description>The RobotSystem2017HW-02 package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <maintainer email="s1526122TM@s.chibakoudai.jp">Hiroki Yumigeta</maintainer>
@@ -15,7 +15,7 @@
   <!-- Url tags are optional, but multiple are allowed, one per tag -->
   <!-- Optional attribute type can be: website, bugtracker, or repository -->
   <!-- Example: -->
-  <!-- <url type="website">http://wiki.ros.org/homework</url> -->
+  <!-- <url type="website">http://wiki.ros.org/RobotSystem2017HW-02</url> -->
 
 
   <!-- Author tags are optional, multiple are allowed, one per tag -->
